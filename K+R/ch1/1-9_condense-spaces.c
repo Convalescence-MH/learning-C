@@ -8,14 +8,10 @@ int main() {
     while ((c = getchar()) != EOF) {
         if (c == ' ') {
             nb++;
-        }
-
-        else if (nb > 0) {
+        } else if (nb > 0) {
             printf(" %c", c);
             nb = 0;
-        }
-
-        else {
+        } else {
             printf("%c", c);
         }
     }
