@@ -4,9 +4,10 @@
 
 /* produce a histogram of the characters used in the input */
 int main(void) {
-  char character_count[MAX_CHARS];
+  /* use unsigned char types for safe array indexing */
+  unsigned char character_count[MAX_CHARS];
+  unsigned char c;
   int i, j;
-  char c;
 
   for (i = 0; i < MAX_CHARS; i++) {
     character_count[i] = 0;
